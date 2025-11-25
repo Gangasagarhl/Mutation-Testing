@@ -1,11 +1,11 @@
-# **Mutation Testing on Standard Algorithms (Java)**
+# Mutation Testing on Standard Algorithms (Java)
 
 *Course: CS731 – Software Testing*
 *Authors: MT2024048 Gangasagar HL, MT2024081 Kuldeep Chamoli*
 
 ---
 
-## ** Project Overview**
+##  Project Overview
 
 This project performs **Mutation Testing** on real-world Java implementations of popular algorithms.
 The source code under test is taken from the GitHub repository **TheAlgorithms/Java**, which contains a wide collection of classical algorithms implemented for learning purposes.
@@ -15,7 +15,7 @@ All mutants were required to be **strongly killed**, following the problem state
 
 ---
 
-## ** Project Aim**
+## Project Aim
 
 The primary aim of this project is to apply **Mutation Testing** on the source code of well-known algorithms and study:
 
@@ -29,7 +29,7 @@ The goal is to ensure that algorithms behave correctly even under minor syntacti
 
 ---
 
-## ** Code Base Tested**
+##  Code Base Tested
 
 The project uses Java implementations of algorithms from the popular repository:
 **TheAlgorithms / Java**
@@ -43,7 +43,7 @@ The codebase contained approximately **1592 lines of executable code** (excludin
 
 ---
 
-## ** Tools & Environment**
+##  Tools & Environment
 
 * **IntelliJ IDEA** – Primary IDE used for development and testing
 * **PIT Mutation Testing Tool (PITest)** – Mutation generation and report visualization
@@ -52,7 +52,7 @@ The codebase contained approximately **1592 lines of executable code** (excludin
 
 ---
 
-## ** Testing Strategy: Mutation Testing**
+##  Testing Strategy: Mutation Testing
 
 Mutation Testing involves making small changes—called *mutants*—to the source code and verifying whether the test suite can detect the behavioral change.
 
@@ -65,9 +65,9 @@ A mutant is considered:
 
 ---
 
-## ** Levels of Mutation Applied**
+##  Levels of Mutation Applied
 
-### **1. Unit-Level Mutation**
+### 1. Unit-Level Mutation
 
 Applied directly on individual functions using operators such as:
 
@@ -81,7 +81,7 @@ Applied directly on individual functions using operators such as:
 * Shift Operator Replacement
 
 
-### **2. Integration-Level Mutation**
+### 2. Integration-Level Mutation
 
 Applied between interacting methods. Operators include:
 
@@ -94,7 +94,7 @@ Applied between interacting methods. Operators include:
 
 ---
 
-## ** Mutation Operators Used (Active Mutators)**
+##  Mutation Operators Used (Active Mutators)
 
 PIT provided several active mutation operators, including:
 
@@ -118,13 +118,13 @@ A complete list is provided in the report.
 
 ---
 
-# ** Mutation Testing Results (Tabulated)**
+# Mutation Testing Results (Tabulated)
 
 Below is the exact summary of results obtained across all algorithms.
 All data is taken from pages 11–13 of the uploaded project report.
 
 
-### **Greedy Algorithms**
+### Greedy Algorithms
 
 | Algorithm               | Killed | %    | LOC |
 | ----------------------- | ------ | ---- | --- |
@@ -146,7 +146,7 @@ All data is taken from pages 11–13 of the uploaded project report.
 
 ---
 
-### **Backtracking Algorithms**
+### Backtracking Algorithms
 
 | Algorithm                       | Killed | %    | LOC |
 | ------------------------------- | ------ | ---- | --- |
@@ -168,7 +168,7 @@ All data is taken from pages 11–13 of the uploaded project report.
 
 ---
 
-### **Sorting Algorithms**
+### Sorting Algorithms
 
 | Algorithm       | Killed | %   | LOC |
 | --------------- | ------ | --- | --- |
@@ -185,34 +185,34 @@ All data is taken from pages 11–13 of the uploaded project report.
 
 ---
 
-## ** Final Summary & Insights**
+## Final Summary & Insights
 
-### **1. High Mutation Scores**
+### 1. High Mutation Scores
 
 Most algorithms achieved **90%+ mutant kills**, indicating strong test coverage and effective detection of injected faults.
 
 
-### **2. Robustness Across Algorithm Families**
+### 2. Robustness Across Algorithm Families
 
 * Greedy algorithms consistently showed **strong resilience**
 * Backtracking algorithms showed **excellent coverage**, despite complex recursive logic
 * Sorting algorithms demonstrated **high kill ratios**, especially Bucket Sort and Merge Sort
 
-### **3. Strong Killing Achieved**
+### 3. Strong Killing Achieved
 
 All mutants were strongly killed, meeting project requirements.
 
-### **4. Wide Range of Mutators Used**
+### 4. Wide Range of Mutators Used
 
 The project integrates both **unit-level** and **integration-level** mutation operators, demonstrating depth in the testing approach.
 
-### **5. Realistic Testing Environment**
+### 5. Realistic Testing Environment
 
 Testing on a widely used open-source repository shows practical relevance and applicability.
 
 ---
 
-## ** HTML Reports**
+## HTML Reports
 
 The PIT mutation testing tool also produced detailed HTML reports showing:
 
